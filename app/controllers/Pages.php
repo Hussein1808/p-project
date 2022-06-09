@@ -10,5 +10,13 @@ class Pages extends Controller
         $indexView->output();
     }
 
+    public function main()
+    {
+        $viewPath = VIEWS_PATH . 'pages/main.php';
+        require_once $viewPath;
+        $mainView = new main($this->getModel(), $this);
+        $mainView->output();
+    }
+
 
 }
