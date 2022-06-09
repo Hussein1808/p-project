@@ -3,15 +3,15 @@
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
 define('DB_PASS', '');
-define('DB_NAME', 'miublog');
+define('DB_NAME', 'p-project');
 
 // App Root
 //echo dirname(dirname(__FILE__));
 define('APPROOT', dirname(dirname(__FILE__)));
 // URL Root
-define('URLROOT', 'http://localhost/personal/public/');
+define('URLROOT', 'http://localhost/p-project/public/');
 // Site Name
-define('SITENAME', 'MIU Blog MVC');
+define('SITENAME', 'Hussein Hashad');
 
 define('APP_VERSION', '1.2');
 
