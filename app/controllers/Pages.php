@@ -10,26 +10,5 @@ class Pages extends Controller
         $indexView->output();
     }
 
-    public function about()
-    {
-        $viewPath = VIEWS_PATH . 'pages/About.php';
-        require_once $viewPath;
-        $aboutView = new About($this->getModel(), $this);
-        $aboutView->output();
-    }
-	public function contact()
-    {
-        $viewPath = VIEWS_PATH . 'pages/contact.php';
-        require_once $viewPath;
-        $contactView = new Contact($this->getModel(), $this);
-        $contactView->output();
-    }
-	public function viewusers()
-    {
-        $viewPath = VIEWS_PATH . 'pages/viewusers.php';
-        require_once $viewPath;
-        $View = new ViewUsers($this->getModel(), $this);
-        $View->output();
-    }
 
 }
